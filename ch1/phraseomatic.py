@@ -8,3 +8,4 @@ import random
 verbs = ['Leverage','Sync','Target','Gamify','Offine',
         'Crowd-sourced','24/7','Lean-in','30,000 foot']
 
+# this is where I left off 
