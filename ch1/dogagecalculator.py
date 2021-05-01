@@ -14,11 +14,17 @@
 #
 #==============================================
 
-dog_name = input("What is your dog's name?")
+dog_name = input("What is your dog's name? ")
+#show  dog's name
+#print(dog_name)
 
-dog_age = input("What is your dog's age?")
+dog_age = int(input("What is your dog's age? "))
+#show  dog's age dogs years
+#print(dog_age)
 
-human_years = dog_age * 7
+# calculate the human years
+human_years = str(dog_age * 7)
+#human_years_string = str(human_years)
 
-print()
 
+print("Your dog, " + dog_name + " is " +  human_years + " years old in human years.")
