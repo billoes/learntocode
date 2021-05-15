@@ -6,39 +6,45 @@
 #- evaluate and determin if tie ; computer or user wins
 #- print winner
 # end the program
-import random
 
+import random
+# computer selects random number between 0-2
 random_choice = random.randint(0,2)
 computer_choice =''
-winner ='it is a tie'
+winner =''
 
-
-
-print ('The computer choses', random_choice)
+# turn the computer's choice into human readable form
 if random_choice == 0:
     computer_choice = 'rock'
 elif random_choice == 1:
     computer_choice = 'paper'
 else:
     computer_choice = 'scissors'
-print ('The computer chose', computer_choice)
 
+#promt the user for input asume valid response
 user_choice = input('rock, paper or scissors? ')
-print('You chose', user_choice, 'and the computer chose', computer_choice)
 
+#check if both chose the same value. If true it is a tie.
 if computer_choice == user_choice:
-    winner = 'it is a tie'
- #   print('it is a tie.')
+    winner = 'Tie'
+ # apply the rules:
+ # paper beats rock
+ # scissors beats paper
+ # rocks beats scissors  
+ # evaluate form the computer's perspective 
 elif computer_choice == 'rock'and user_choice != 'paper':
-    winner='computer'
+    winner='Computer'
 elif computer_choice =='paper' and user_choice != 'scissors':
-    winner='computer'
+    winner='Computer'
 
 elif computer_choice =='scissors' and user_choice != 'rock':
-    winner='computer'
-#elif computer_choice == user_choice:
-#    winner ='it is a tie'     
+    winner='Computer'
+# no luck for the computer User wins
 else:
-    winner = 'you'
+    winner = 'User'
+# Print the results
 
-print('The winner is,', winner,'.')
+if winner == 'Tie':
+    print('We both chose', computer_choice + ', play again.')
+else:
+    print(winner,'won. The computer chose', computer_choice + '.')
