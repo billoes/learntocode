@@ -21,9 +21,16 @@ elif random_choice == 1:
 else:
     computer_choice = 'scissors'
 
-#promt the user for input asume valid response
-user_choice = input('rock, paper or scissors? ')
+#prompt the user for input check for valid response
+user_choice =''
 
+
+while (user_choice != 'rock' and 
+        user_choice != 'paper' and
+        user_choice != 'scissors'):
+    user_choice = input('rock, paper or scissors? ')
+        
+        
 #check if both chose the same value. If true it is a tie.
 if computer_choice == user_choice:
     winner = 'Tie'
