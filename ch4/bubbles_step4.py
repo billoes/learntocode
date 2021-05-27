@@ -18,14 +18,6 @@ for i in range(length):
 print('Bubbles tests:',length)
 print('Higheste bubles score:', high_score)
 
-best_solutions=[]
-
-for i in range(length):
-    if scores[i] == high_score:
-        best_solutions.append(i)
-
-print('Solutions with the highest scores are:',best_solutions)
-
 
 
 
