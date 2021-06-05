@@ -7,7 +7,8 @@ def steal(balance, amount):
 
     if (amount < balance):
         balance = balance - amount
-    
+    # retun= amount
+    # error in the orignal code
     return balance
     camera_on = True
 
