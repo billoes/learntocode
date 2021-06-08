@@ -19,6 +19,9 @@ scores = [60, 50, 60, 58, 54, 54,
           46, 31, 57, 52, 44, 18,
           41, 53, 55, 61, 51, 44]
 
-print(scores)
+
+smoothies = ['coconut', 'strawberry', 'banana', 'pineapple']
+bubble_sort(smoothies)
+print(smoothies)
 
 
