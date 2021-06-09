@@ -1,4 +1,4 @@
-countSyllables(word):
+def countSyllables(word):
     vowels = "aeiouy"
     numVowels = 0
     lastWasVowel = False
@@ -8,7 +8,7 @@ countSyllables(word):
             if v == wc:
                 if not lastWasVowel: numVowels+=1   #don't count diphthongs
                 foundVowel = lastWasVowel = True
-                        break
+                break
         if not foundVowel:  #If full cycle and no vowel found, set lastWasVowel to false
             lastWasVowel = False
     if len(word) > 2 and word[-2:] == "es": #Remove es - it's "usually" silent (?)

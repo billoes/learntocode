@@ -1,0 +1,26 @@
+Define a function compute_readability(text):
+    Declare a variable total_words and set to 0.
+    Declare a variable total_sentences and set to 0.
+    Declare a variable total_syllables and set to 0.
+    Declare a variable score and set to 0.
+
+    Assign variable total_words to result of calling the function count_words(text)
+    Assign variable total_sentences to result of calling the function count_sentences(text)
+    Assign variable total_syllables to result of calling the function count_syllables(text)
+
+
+    Assign variable score to
+        206.835 - 1.015*(total_words/total_sentences) -8.6*(total_syllables/total_words)
+
+    If score >= 90.0:
+        PRINT 'Reading level of 5th Grade'
+    ELIF score >= 80.0:
+        PRINT 'Reading level of 6th Grade'
+    ELIF score >= 70.0:
+        PRINT 'Reading level of 7th Grade'
+    ELIF score >= 60.0:
+        PRINT 'Reading level of 8-9th Grade'
+    ELIF score >= 50.0:
+        PRINT 'Reading level of 10-12th Grade'
+    ELIF score >= 30.0:
+        PRINT 'Reading level of College Student'
