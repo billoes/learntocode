@@ -18,6 +18,9 @@ def count_syllables_in_word(word):
 
     if len(processed_word)<= 3:
         return 1
+    if processed_word[-1] in 'eE':
+        processed_word = processed_word[0:-1]
+    
     vowels= "aeiouAEIOU"
     prev_char_was_vowel = False
     for char in processed_word:
@@ -27,7 +30,8 @@ def count_syllables_in_word(word):
                 prev_char_was_vowel=True
         else:
             prev_char_was_vowel = False
-
+    
+    
     return count
     
 
@@ -51,7 +55,8 @@ def compute_readability(text):
     total_words = len(words)
     total_sentences = count_sentences(text)
     total_syllables = count_syllables(words)
-    print(total_words, 'word')
+    
+    print(total_words, 'words')
     print(total_sentences, 'sentences')
     print(total_syllables, 'syllables')
     
