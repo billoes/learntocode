@@ -1,4 +1,4 @@
-text ="""The first thing that stands between you and writing your first, real, 
+text = """The first thing that stands between you and writing your first, real, 
 piece of code, is learning the skill of breaking problems down into 
 acheivable little actions that a computer can do for you. Of course, 
 you and the computer will also need to be speaking a common language, 
@@ -29,3 +29,4 @@ You’re going to find these simple statements or instructions are the
 first key to coding, in fact every App or software program you’ve ever 
 used has been nothing more than a (sometimes large) set of simple 
 instructions to the computer that tell it what to do."""
+
