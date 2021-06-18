@@ -83,7 +83,7 @@ def compute_readability(text):
     output_results(score)
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     import ch1text
     print("Chapter1 Text:")
     compute_readability(ch1text.text)
