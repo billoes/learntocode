@@ -20,15 +20,18 @@ def main():
     setup(pencil)
     turtle.tracer(100)
 
-    order = 2
+    order = 5
     size = 400
-    koch(pencil, size, order)
+    for in range(3):
+        koch(pencil, size, order)
+        pencil.right(120)
 
-if __name__ == '__main__':
-    main()
-    turtle.tracer(100)
-    turtle.mainloop()
 
+#if __name__ == '__main__':
+#    main()
+#    turtle.tracer(100)
+#    turtle.mainloop()
+#
 
 
 
