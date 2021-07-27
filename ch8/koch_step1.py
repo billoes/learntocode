@@ -20,7 +20,7 @@ def main():
     setup(pencil)
     turtle.tracer(100)
 
-    order = 2    
+    order = 2
     size = 400
     koch(pencil, size, order)
 
