@@ -7,10 +7,9 @@ def setup(pencil):
     pencil.pendown()
 
 def koch(pencil, size, order):
-   print(order) 
-   if order == 0:
+    if order == 0:
        pencil.forward(size)
-   else:
+    else:
        for angle in [60, -120, 60, 0]:
            koch(pencil, size/3, order-1)
            pencil.left(angle)
@@ -22,16 +21,16 @@ def main():
 
     order = 5
     size = 400
-    for in range(3):
+    for i in range(3):
         koch(pencil, size, order)
         pencil.right(120)
 
 
-#if __name__ == '__main__':
-#    main()
-#    turtle.tracer(100)
-#    turtle.mainloop()
-#
+if __name__ == '__main__':
+    main()
+    turtle.tracer(100)
+    turtle.mainloop()
+
 
 
 
