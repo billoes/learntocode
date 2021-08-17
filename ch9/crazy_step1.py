@@ -25,7 +25,7 @@ def process_line(line):
     return line
 
 def main():
-    lib = make_crazy_lib('lib.txt')
+    lib = make_crazy_lib('./ch9/lib.txt')
     print(lib)
 
 if __name__ == '__main__':
