@@ -30,9 +30,14 @@ def process_line(line):
     words = line.split()
     
     for word in words:
-        if word in placeholders:
-            answer = input('Enter a ' + word + ":")
-            processed_line = processed_line + answer + ' '
+        striped = word.strip('.,;?!')
+        if striped in placeholders:
+            answer = input('Enter a ' + striped + ":")
+            processed_line = processed_line + answer
+            if word[-1] in '.,;?!':
+                processed_line = processed_line + word[-1] + ' '
+            else:
+                processed_line = processed_line + ' '
         else:
             processed_line = processed_line + word + ' '
     
