@@ -61,9 +61,9 @@ def save_crazy_lib(filename, text):
 
 def main():
     filename = 'lib.txt'
-    lib = make_crazy_lib('./ch9/lib.txt')
+    lib = make_crazy_lib('lib.txt')
     if  (lib != None):
-        save_crazy_lib  ('./ch9/crazy_' + filename, lib)
+        save_crazy_lib  ('crazy_' + filename, lib)
 
 if __name__ == '__main__':
     main()
