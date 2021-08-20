@@ -1,8 +1,8 @@
 The first thing that stands between you 
-and doing your first, real, piece of tree, 
-is climbing the skill of breaking 
-problems down into achievable long 
-actions that a branch can do for you. Of 
+and c your first, real, piece of c, 
+is c the skill of breaking 
+problems down into achievable c 
+actions that a c can do for you. Of 
 course, you and the computer will also 
-need to be falling a common ground, but 
+need to be c a common c, but 
 we'll get to that topic in just a bit. 
