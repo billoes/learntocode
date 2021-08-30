@@ -1,4 +1,8 @@
 import requests, json, turtle
+def move_iss(lat,long):
+    iss.penup()
+    iss.goto(long, lat)
+    iss.pendown()
 
 screen = turtle.Screen()
 screen.setup(1000,500)
@@ -6,7 +10,7 @@ screen.bgpic('./ch10/earth.gif')
 screen.setworldcoordinates(-180, -90, 180, 90)
 
 iss = turtle.Turtle()
-iss.register_shape("./ch10/iss.gif")
+turtle.register_shape("./ch10/iss.gif")
 iss.shape("./ch10/iss.gif")
 
 
@@ -17,8 +21,9 @@ response = requests.get(url)
 if (response.status_code == 200):
     response_dictionary = json.loads(response.text)
     position = response_dictionary['iss_position']
-    print('International Space Station at ' + position['latitude'] + ',' + position['longitude'])
-
+    lat = float(position['latitude'])
+    long = float(position['longitude'])
+    move_iss(lat, long)
 
 
 else:
