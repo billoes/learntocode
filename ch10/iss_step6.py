@@ -31,18 +31,15 @@ def track_iss():
     else:
         print("Huston we have a problem:",response.status_code)
     
+    widget = turtle.getcanvas()
+    widget.after(5000, track_iss)
 
+def main():
+    global iss
+    screen = turtle.Screen()
+    setup(screen)
+    track_iss()
 
-
-screen = turtle.Screen()
-
-
-
-
-
-
-
-
-
-screen.setup(1000,500)
-turtle.mainloop()
+if __name__ == "__main__":
+    main()
+    turtle.mainloop()
