@@ -10,4 +10,5 @@ for i in range(height):
 
 
 
+
 print (grid_model)
